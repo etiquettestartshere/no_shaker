@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<LangVersion>10.0</LangVersion>
+		<TargetFramework>net472</TargetFramework>
+		<OutputType>Library</OutputType>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<!--DebugType>none</DebugType-->
+		<DebugType>pdbonly</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>Mod_NoShaker</OutputPath>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="Properties\**" />
+		<EmbeddedResource Remove="Properties\**" />
+		<None Remove="Properties\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="0Harmony">
+			<HintPath>..\..\..\..\SteamLibrary\steamapps\common\Elin\BepInEx\core\0Harmony.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="BepInEx.Core">
+			<HintPath>..\..\..\..\SteamLibrary\steamapps\common\Elin\BepInEx\core\BepInEx.Core.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="BepInEx.Unity">
+			<HintPath>..\..\..\..\SteamLibrary\steamapps\common\Elin\BepInEx\core\BepInEx.Unity.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Elin">
+			<HintPath>..\..\..\..\SteamLibrary\steamapps\common\Elin\Elin_Data\Managed\Elin.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Plugins.BaseCore">
+			<HintPath>..\..\..\..\SteamLibrary\steamapps\common\Elin\Elin_Data\Managed\Plugins.BaseCore.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Plugins.UI">
+			<HintPath>..\..\..\..\SteamLibrary\steamapps\common\Elin\Elin_Data\Managed\Plugins.UI.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="System"/>
+		<Reference Include="System.Core"/>
+		<Reference Include="System.Data"/>
+		<Reference Include="System.Xml"/>
+		<Reference Include="UnityEngine">
+			<HintPath>..\..\..\..\SteamLibrary\steamapps\common\Elin\Elin_Data\Managed\UnityEngine.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>..\..\..\..\SteamLibrary\steamapps\common\Elin\Elin_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="NoShaker.cs" />
+		<Compile Include="RemoveShaking.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include=".gitignore" />
+		<Content Include="LICENSE" />
+		<Content Include="Mod_NoShaker\package.xml" />
+		<Content Include="README.md" />
+	</ItemGroup>
+</Project>
