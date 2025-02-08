@@ -1,5 +1,5 @@
 using HarmonyLib;
-using UnityEngine;
+//using UnityEngine;
 
 [HarmonyPatch]
 public class RemoveShaking
@@ -8,7 +8,7 @@ public class RemoveShaking
   [HarmonyPatch(typeof(Shaker), "ShakeCam")]
   private static bool Prefix()
   {
-    /*Debug.Log("SHAKE REMOVED");*/
+    //Debug.Log("SHAKE REMOVED");
     return false;
   }
 }
