@@ -7,9 +7,12 @@
     <builtin>false</builtin>
     <loadPriority>10</loadPriority>
     <version>0.23.81</version>
-    <description>A mod for Elin to remove ALL screen shake/camera shake (as far as I am aware). Though there is a setting that disables camera shake, it only removes it from certain events. This mod removes camera shake from all events, including things like earthquake and meteor. Hopefully, for people that are bothered by the screenshake or just wish to turn it off, this will help.
+    <description>
+			A mod for Elin to remove ALL screen shake/camera shake (as far as I am aware). Though there is a setting that disables camera shake, it only removes it from certain events. This mod removes camera shake from all events, including things like earthquake and meteor. Hopefully, for people that are bothered by the screenshake or just wish to turn it off, this will help.
 
-        Issues and Source Code:
-        https://github.com/etiquettestartshere/no_shaker
-    </description>
+			Issues and Source Code:
+			https://github.com/etiquettestartshere/no_shaker
+			___
+			[Google Translate] 画面が揺れない
+		</description>
 </Meta>
