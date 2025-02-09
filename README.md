@@ -4,7 +4,7 @@ A mod for Elin to remove ALL screen shake/camera shake (as far as I am aware). T
 Issues and Source Code:
 https://github.com/etiquettestartshere/no_shaker
 ___
-[Google Translate] ‰æ–Ê‚ª—h‚ê‚È‚¢
+[Google Translate] ç”»é¢ãŒæºã‚Œãªã„
 
 ___
 
